@@ -25,8 +25,7 @@ foreach ($array as $row){
    '$pillarId','$pillarName')";
 
     $query=$conn->query($sql);
-    
-
+ 
 }
 ?>
 <!DOCTYPE html>
@@ -76,46 +75,14 @@ foreach ($array as $row){
       <td><?php echo $row["pillarId"]; ?></td>
       <td><?php echo $row["pillarName"]; ?></td>
       </tr>
-    <?php }
-  } else {
-    echo "0 results";
-  }
-?>
+        <?php }
+        } else {
+                echo "0 results";
+        }
+            ?>
 </tbody>
     </table>
 
-    <!--
-    <table class="table">
-        <thead class="thead-light">
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
-        </tbody>
-    </table>
--->
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
